@@ -1,1 +1,1 @@
-st-tabs
+st_tabs

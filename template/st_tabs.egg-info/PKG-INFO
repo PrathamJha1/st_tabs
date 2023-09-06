@@ -1,8 +1,8 @@
 Metadata-Version: 2.1
 Name: st-tabs
-Version: 0.0.2
+Version: 0.0.1
 Summary: Streamlit component that allows you to do customize your tabbar as per your need
-Home-page: UNKNOWN
+Home-page: https://github.com/PrathamJha1/st_tabs
 Author: Pratham Jha
 Author-email: prathamjha5683@gmail.com
 License: UNKNOWN
@@ -13,7 +13,7 @@ Description: # streamlit-custom-component
         ## Installation instructions
         
         ```sh
-        pip install streamlit-custom-component
+        pip install st_tabs
         ```
         
         ## Usage instructions
@@ -21,11 +21,14 @@ Description: # streamlit-custom-component
         ```python
         import streamlit as st
         
-        from my_component import my_component
+        from st_tabs import TabBar
         
-        value = my_component()
-        
-        st.write(value)
+        component1=  TabBar(tabs=["Tab1","Tab2"],default=0,background = "red",color="grey",activeColor="blue",fontSize="20px")
+        #Handle your tabbar usecases here.
+        if(component1 == 0):
+            st.write("Hooray! we are in Tab1")
+        else:
+            st.write("Yippee! We are in Tab2 ")
         ```
 Platform: UNKNOWN
 Requires-Python: >=3.7

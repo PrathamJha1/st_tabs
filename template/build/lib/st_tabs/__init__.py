@@ -37,7 +37,7 @@ else:
     # build directory:
     parent_dir = os.path.dirname(os.path.abspath(__file__))
     build_dir = os.path.join(parent_dir, "frontend/build")
-    TabBarfunc = components.declare_component("Tab_Bar", path=build_dir)
+    TabBarfunc = components.declare_component("TabBar", path=build_dir)
 
 
 # Create a wrapper function for the component. This is an optional
@@ -45,15 +45,30 @@ else:
 # `declare_component` and call it done. The wrapper allows us to customize
 # our component's API: we can pre-process its input args, post-process its
 # # output value, and add a docstring for users.
-# def TabBar(tabs,default,fontWeight=None,color=None,activeColor=None,fontSize=None,key=None):
-#     # Call through to our private component function. Arguments we pass here
-#     # will be sent to the frontend, where they'll be available in an "args"
-#     # dictionary.
-#     #
-#     # "default" is a special argument that specifies the initial return
-#     # value of the component before the user has interacted with it.
-#     value = TabBarfunc(tabs=tabs, default=default, styles = [fontWeight,color,activeColor,fontSize] , key=key)
-#     # returns the tab index that is currently selected 
-#     return value
+def TabBar(
+    tabs,
+    default,
+    background=None,
+    fontWeight=None,
+    color=None,
+    activeColor=None,
+    fontSize=None,
+    key=None,
+):
+    # Call through to our private component function. Arguments we pass here
+    # will be sent to the frontend, where they'll be available in an "args"
+    # dictionary.
+    #
+    # "default" is a special argument that specifies the initial return
+    # value of the component before the user has interacted with it.
+    value = TabBarfunc(
+        tabs=tabs,
+        default=default,
+        styles=[background,fontWeight, color, activeColor, fontSize],
+        key=key,
+    )
+    # We could modify the value returned from the component if we wanted.
+    # There's no need to do this in our simple example - but it's an option.
+    return value
 
-    
+
