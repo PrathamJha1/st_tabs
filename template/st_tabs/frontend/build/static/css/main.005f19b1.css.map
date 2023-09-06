@@ -1,0 +1,1 @@
+{"version":3,"file":"static/css/main.005f19b1.css","mappings":"2FAAA,WACI,SACF","sources":["customstyling.css"],"sourcesContent":[".tab:focus {\n    outline: 0;\n  }\n  \n  @import url('https://fonts.googleapis.com/css2?family=Roboto,wght@1,400;1,500&display=swap');"],"names":[],"sourceRoot":""}
