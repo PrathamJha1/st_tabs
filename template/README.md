@@ -1,7 +1,7 @@
-# streamlit-custom-component
+# st_tabs
 
-Streamlit component that allows you to do X
-
+Streamlit component that allows you to do change the tabbar as per your need
+This component has implement Material UI tabbar component in order to create simple yet good looking tab with the functionality to change its background color,textcolor,hoverstate color,font-size and font-weight respectively.
 ## Installation instructions
 
 ```sh
