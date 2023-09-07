@@ -1,8 +1,16 @@
 # st_tabs
 
 Streamlit component that allows you to do change the tabbar as per your need
-This component has implement Material UI tabbar component in order to create simple yet good looking tab with the functionality to change its background color,textcolor,hoverstate color,font-size and font-weight respectively.
+
+The component has implemented Material UI Tab Bar in order to create simple yet smotth interface with the functionality to change its background color,textcolor,hoverstate color,font-size and font-weight respectively.
+
+The component returns the index of the Tab that is currenly selected/active.
+
+pypi package link [st_tabs](https://pypi.org/project/st-tabs/)
+
+
 ## Installation instructions
+
 
 ```sh
 pip install st_tabs
@@ -22,3 +30,6 @@ if(component1 == 0):
 else:
     st.write("Yippee! We are in Tab2 ")
 ```
+
+
+Please feel free to give feedback and suggestions to make it better.
